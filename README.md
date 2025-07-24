@@ -2,5 +2,5 @@
  ## [✔️] Agile Completion
 ![Agile Completion](Agile.jpeg)
 ![test](Test.c)
-![gittraining](git training.pdf)
+
 
