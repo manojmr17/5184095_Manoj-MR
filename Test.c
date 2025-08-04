@@ -1,18 +1,42 @@
+
 #include <stdio.h>
-void main() {
-    int rows;
-    printf("Enter number of rows: ");
-    scanf("%d", &rows);
-    for(int i = 1; i <= rows; i++) {
-        for(int j = 1; j <= rows - i; j++) {
-            printf(" ");
-        }
-        for(int k = 1; k <= (2 * i - 1); k++) {
-            printf("*");
-        }
-        printf("\n");
+
+int main() {
+    int day;
+    
+
+    while(day>7){
+    printf("Enter a number (1 to 7) : ");
+    scanf("%d", &day);
+
+    switch(day) {
+        case 1:
+            printf("Sunday\n");
+            break;
+        case 2:
+            printf("Monday\n");
+            break;
+        case 3:
+            printf("Tuesday\n");
+            break;
+        case 4:
+            printf("Wednesday\n");
+            break;
+        case 5:
+            printf("Thursday\n");
+            break;
+        case 6:
+            printf("Friday\n");
+            break;
+        case 7:
+            printf("Saturday\n");
+            break;
+        default:
+            printf("Invalid input Please enter a number between 1 and 7\n");
+            
+    
     }
-    //checked out to test_branch_1
-    // checked out to test_branch2
-    // checked out to test_branch2
+    }
+
+    return 0;
 }
