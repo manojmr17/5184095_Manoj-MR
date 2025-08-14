@@ -1,0 +1,65 @@
+    2  git --version
+    3  git help config
+    6  git init
+    7  git status
+    8  git add demo.txt
+    9  git commit m "comitting a text file
+   10  git commit m "comitting a text file"
+   11  git commit m "comitting a text file
+   12  git commit -m "comitting a text file"
+   13  git config --global user.username ManjurajuMR
+   14  git remote add origin https://github.com/ManjurajuMR/test_demo.git
+   15  git push origin master
+   16  git push origin master
+   17  git add origin https://github.com/ManjurajuMR/test_demo.git
+   18  git init
+   19  git add README.md
+   20  git add demo.txt
+   37  git D:\my git repo
+   38  git remote -v
+   39  git add .
+   40  git commit -m "contactsapp"
+   41  git push -u origin main
+   43  git remote -v
+   44  git add .
+   45  git commit -m "new_version"
+   46  git push -u origin main
+   47  git init
+   48  git clone https://github.com/ManjurajuMR/hello-world.git
+   49  git clone https://github.com/manojmr17/5184095_Manoj-M_R.git
+   51  git config user.name "manojmr17
+   52  git config user.name "manojmr17"
+   53  git config user.email "manojmr1703@gmail.com"
+   54  git clone https://github.com/manojmr17/5184095_Manoj_MR.git
+   55  git clone https://github.com/manojmr17/5184095_Manoj-MR.git
+   56  git config
+   57  git --version
+   58  git config --global user.name "manoj17"
+   62  git --verson
+   63  git --version
+   66  git add.
+   67  git add.
+   68  git init
+   69  git add.
+   70  git add .
+   71  git status
+   72  git commit -m "initial commit"
+   73  git push
+   74  git pull origin main --rebase
+   75  git push origin main
+   76  git clone https://github.com/manojmr17/manu.git
+   77  git init
+   78  git add .
+   79  git commit -m "initial condition"
+   80  git status
+   81  git push
+   82  git push
+   83  git pull
+   84  git push
+   85  git push
+   86  git push
+   87  git push
+   90  git push
+   91  git pull
+   92  git push
+   94  git push
