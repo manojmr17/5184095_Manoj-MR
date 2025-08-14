@@ -12,6 +12,12 @@
 </div>
  <div style="text-align: center;">
   <img src="Linux_commends/LC2.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</div>
+ <div style="text-align: center;">
+  <img src="Linux_commends/Lc3.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+</div>
+ <div style="text-align: center;">
+  <img src="Linux_commends/Lc4.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
 
  ## [✔️] C completion
   <div style="text-align: center;">
