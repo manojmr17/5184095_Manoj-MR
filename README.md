@@ -1,5 +1,5 @@
  5184095_Manoj_MR
- -----
+ ---
  ## 📚 Overview
 
 Welcome to my repository! This is a comprehensive record of my learning journey through:
@@ -11,7 +11,7 @@ Welcome to my repository! This is a comprehensive record of my learning journey 
 - **🧪 Unit Testing with Unity Framework**
 
 It contains **certificates**, **hands-on exercises**, and **practical command-line tasks** to showcase my progress and skills.
-----
+---
 ## 🧭 Repository Navigation
 
 Explore the repository for detailed content:
