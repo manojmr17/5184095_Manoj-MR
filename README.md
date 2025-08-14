@@ -13,7 +13,7 @@
 <section id="1">
  ## [✔️] Agile Completion
   <div style="text-align: center;">
-  <img src="Agile.jpg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
+  <img src="Agile.jpeg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
 </div>
  </section>
  <section id="2">
