@@ -1,4 +1,16 @@
  5184095_Manoj_MR
+ ## 📚 Overview
+
+Welcome to my repository! This is a comprehensive record of my learning journey through:
+
+- **📘 SDLC (Software Development Life Cycle)**
+- **🛠️ Git & Version Control**
+- **🐧 Linux Command Line**
+- **💻 C Programming Fundamentals**
+- **🧪 Unit Testing with Unity Framework**
+
+It contains **certificates**, **hands-on exercises**, and **practical command-line tasks** to showcase my progress and skills.
+
  <div style="width:100%; background-color:#222; padding:10px; text-align:center;">
 
 <a href="#1" style="color:white; text-decoration:none; margin: 0 20px; font-weight:bold; font-size:18px;">🛠️ SDLC</a>
