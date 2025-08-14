@@ -1,0 +1,37 @@
+git add .
+git add demo.txt
+git add origin https://github.com/ManjurajuMR/test_demo.git
+git add README.md
+git add.
+git clone https://github.com/ManjurajuMR/hello-world.git
+git clone https://github.com/manojmr17/5184095_Manoj_MR.git
+git clone https://github.com/manojmr17/5184095_Manoj-M_R.git
+git clone https://github.com/manojmr17/5184095_Manoj-MR.git
+git clone https://github.com/manojmr17/manu.git
+git commit m "comitting a text file
+git commit m "comitting a text file"
+git commit -m "comitting a text file"
+git commit -m "contactsapp"
+git commit -m "initial commit"
+git commit -m "initial condition"
+git commit -m "new_version"
+git config
+git config --global user.name "manoj17"
+git config --global user.username ManjurajuMR
+git config user.email "manojmr1703@gmail.com"
+git config user.name "manojmr17
+git config user.name "manojmr17"
+git D:\my git repo
+git help config
+git init
+git pull
+git pull origin main --rebase
+git push
+git push origin main
+git push origin master
+git push -u origin main
+git remote add origin https://github.com/ManjurajuMR/test_demo.git
+git remote -v
+git status
+git --version
+git --verson
