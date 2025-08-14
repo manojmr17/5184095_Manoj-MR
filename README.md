@@ -11,6 +11,9 @@ Welcome to my repository! This is a comprehensive record of my learning journey 
 
 It contains **certificates**, **hands-on exercises**, and **practical command-line tasks** to showcase my progress and skills.
 
+## 🧭 Repository Navigation
+
+Explore the repository for detailed content:
  <div style="width:100%; background-color:#222; padding:10px; text-align:center;">
 
 <a href="#1" style="color:white; text-decoration:none; margin: 0 20px; font-weight:bold; font-size:18px;">🛠️ SDLC</a>
