@@ -12,6 +12,7 @@ Welcome to my repository! This is a comprehensive record of my learning journey 
 
 It contains **certificates**, **hands-on exercises**, and **practical command-line tasks** to showcase my progress and skills.</p>
 <hr>
+
 ## 🧭 Repository Navigation
 
 Explore the repository for detailed content:
