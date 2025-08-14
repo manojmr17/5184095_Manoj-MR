@@ -10,16 +10,16 @@
 <a href="#4" style="color:white; text-decoration:none; margin: 0 20px; font-weight:bold; font-size:18px;">⚡ C PROGRAMMING</a>
 
 
-<section id="1>
+<section id="1">
  ## [✔️] Agile Completion
 ![Agile Completion](Agile.jpeg)
  </section>
- <section id="2>
+ <section id="2">
  ## [✔️] Git training completion
 <div style="text-align: center;">
   <img src="Git_week2/git training.jpg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
  </section>
- <section id="3> 
+ <section id="3"> 
  ## [✔️] Linux Commends
 <div style="text-align: center;">
   <img src="Linux_commends/LC1.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
@@ -33,7 +33,7 @@
  <div style="text-align: center;">
   <img src="Linux_commends/Lc4.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
  </section>
-   <section id="4> 
+   <section id="4"> 
  ## [✔️] C completion
   <div style="text-align: center;">
   <img src="C completion/Introduction to C.jpg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
