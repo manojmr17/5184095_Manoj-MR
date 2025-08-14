@@ -1,0 +1,86 @@
+#to check even or odd, min and max
+
+//main.c
+#include "stdio.h"
+#include "allfun.h"
+#include "unity.h"
+#include <stdbool.h>
+
+void setUp(){}
+void tearDown(){}
+
+void test_even()
+{
+    TEST_ASSERT_EQUAL(1,is_even(2));
+    TEST_ASSERT_EQUAL(1,is_even(10));
+    TEST_ASSERT_TRUE(is_even(8));
+}
+void test_noteven()
+{
+    TEST_ASSERT_NOT_EQUAL(1,is_even(1));
+    TEST_ASSERT_NOT_EQUAL(1,is_even(7));
+    TEST_ASSERT_FALSE(is_even(5));
+}
+
+void test_max(){
+    TEST_ASSERT_EQUAL(30,is_max(20,30));
+    TEST_ASSERT_EQUAL_INT(20,is_max(20,10));
+    TEST_ASSERT_GREATER_THAN(10, is_max(50,20));
+    TEST_ASSERT_GREATER_OR_EQUAL(10,is_max(10,5));
+
+}
+void test_min(){
+    //TEST_IGNORE();
+    TEST_ASSERT_EQUAL(3,is_min(10,3));
+    TEST_ASSERT_EQUAL_INT(5,is_min(10,5));
+    TEST_ASSERT_LESS_THAN(3,is_min(2,1));
+    TEST_ASSERT_LESS_OR_EQUAL(5,is_min(5,10));
+
+}
+
+int main(){
+    UNITY_BEGIN();
+    RUN_TEST(test_even);
+    RUN_TEST(test_noteven);
+    RUN_TEST(test_max);
+    RUN_TEST(test_min);
+    return UNITY_END();
+}
+
+//all_fun.c
+#include "allfun.h"
+#include "unity.h"
+#include <stdbool.h>
+
+bool is_even(int a){
+    return a%2==0;
+}
+
+int is_max(int a, int b)
+{
+    return (a>b)?a:b ;
+}
+
+int is_min(int a, int b)
+{
+    return (a<b)?a:b ;
+}
+
+//allfun.h
+#ifndef __ALLFUN__H
+#define __ALLFUN__H
+#include <stdbool.h>
+bool is_even(int a);
+int is_max(int a, int b);
+int is_min(int a, int b);
+#endif
+
+//Makefile
+object.o: main.c all_fun.c unity.c
+	gcc $^ -c
+out:main.o all_fun.o unity.o
+	gcc $^ -o out.exe
+run: out
+	./out.exe
+clean:
+	rm -rf *.o*.out

@@ -1,0 +1,50 @@
+#To swap values of two number
+ 
+//main.c
+#include "stdio.h"
+#include "swap.h"
+#include "unity.h"
+
+void setUp(){}
+void tearDown(){}
+
+void test_swap(){
+    int a=10,b=20;
+    num_swap(&a,&b);
+    TEST_ASSERT_EQUAL_INT(10,b);
+    TEST_ASSERT_EQUAL_INT(20,a);
+}
+
+int main(){
+    UNITY_BEGIN();
+    RUN_TEST(test_swap);
+    return UNITY_END();
+}
+
+//swap.c
+#include "swap.h"
+#include "unity.h"
+
+int num_swap(int *a,int *b)
+{
+  int temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+//swap.h
+#ifndef __SWAP__H
+#define __SWAP__H
+int num_swap(int *a,int *b);
+#endif
+
+//makefile
+
+object.o: main.c swap.c unity.c
+	gcc $^ -c
+out:main.o swap.o unity.o
+	gcc $^ -o out.exe
+run: out
+	./out.exe
+clean:
+	rm -rf *.o*.out
