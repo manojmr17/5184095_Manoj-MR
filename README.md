@@ -25,7 +25,7 @@ Explore the repository for detailed content:
 <a href="#3" style="color:white; text-decoration:none; margin: 0 20px; font-weight:bold; font-size:18px;">💻 LINUX</a>
 
 <a href="#4" style="color:white; text-decoration:none; margin: 0 20px; font-weight:bold; font-size:18px;">⚡ C PROGRAMMING</a>
-
+<hr>
 
 <section id="1">
  
