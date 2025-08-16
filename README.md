@@ -35,11 +35,13 @@ Explore the repository for detailed content:
 </div>
  </section>
  <section id="2">
+  
  ## [✔️] Git training completion
 <div style="text-align: center;">
   <img src="Git_week2/git training.jpg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
  </section>
  <section id="3"> 
+  
  ## [✔️] Linux Commends
 <div style="text-align: center;">
   <img src="Linux_commends/LC1.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
@@ -54,6 +56,7 @@ Explore the repository for detailed content:
   <img src="Linux_commends/Lc4.png" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
  </section>
    <section id="4"> 
+    
  ## [✔️] C completion
   <div style="text-align: center;">
   <img src="C completion/Introduction to C.jpg" alt="Descriptive Alt Text" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" />
