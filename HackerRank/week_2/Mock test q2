@@ -1,0 +1,142 @@
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Helper function declarations
+char* readline();
+char* ltrim(char*);
+char* rtrim(char*);
+char** split_string(char*);
+int parse_int(char*);
+
+// Compute gcd of two numbers
+int gcd_two(int a, int b) {
+    while (b) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+// Compute lcm of two numbers
+int lcm_two(int a, int b) {
+    int g = gcd_two(a, b);
+    return (a / g) * b;
+}
+
+// Main function to get total numbers between sets
+int getTotalX(int a_count, int* a, int b_count, int* b) {
+    int lcm_val = a[0];
+    for (int i = 1; i < a_count; i++) {
+        lcm_val = lcm_two(lcm_val, a[i]);
+    }
+
+    int gcd_val = b[0];
+    for (int j = 1; j < b_count; j++) {
+        gcd_val = gcd_two(gcd_val, b[j]);
+    }
+
+    int valid_count = 0;
+    for (int multiple = lcm_val; multiple <= gcd_val; multiple += lcm_val) {
+        if (gcd_val % multiple == 0) {
+            valid_count++;
+        }
+    }
+    return valid_count;
+}
+
+int main() {
+    FILE* fptr = fopen(getenv("OUTPUT_PATH"), "w");
+    if (!fptr) return 1;
+
+    char** first_line = split_string(rtrim(readline()));
+    int n = parse_int(*(first_line));
+    int m = parse_int(*(first_line + 1));
+
+    char** arr_tokens = split_string(rtrim(readline()));
+    int* arr = malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+        arr[i] = parse_int(*(arr_tokens + i));
+    }
+
+    char** brr_tokens = split_string(rtrim(readline()));
+    int* brr = malloc(m * sizeof(int));
+    for (int j = 0; j < m; j++) {
+        brr[j] = parse_int(*(brr_tokens + j));
+    }
+
+    int total = getTotalX(n, arr, m, brr);
+    fprintf(fptr, "%d\n", total);
+
+    free(arr);
+    free(brr);
+    fclose(fptr);
+    return 0;
+}
+
+// Input helpers
+char* readline() {
+    size_t alloc_len = 1024, data_len = 0;
+    char* buffer = malloc(alloc_len);
+
+    while (true) {
+        char* cursor = buffer + data_len;
+        char* line = fgets(cursor, alloc_len - data_len, stdin);
+        if (!line) break;
+
+        data_len += strlen(cursor);
+        if (data_len < alloc_len - 1 || buffer[data_len - 1] == '\n') break;
+
+        alloc_len <<= 1;
+        buffer = realloc(buffer, alloc_len);
+        if (!buffer) return NULL;
+    }
+
+    if (buffer[data_len - 1] == '\n') {
+        buffer[data_len - 1] = '\0';
+        buffer = realloc(buffer, data_len);
+    } else {
+        buffer = realloc(buffer, data_len + 1);
+        buffer[data_len] = '\0';
+    }
+    return buffer;
+}
+
+char* ltrim(char* str) {
+    while (*str && isspace(*str)) str++;
+    return str;
+}
+
+char* rtrim(char* str) {
+    char* end = str + strlen(str) - 1;
+    while (end >= str && isspace(*end)) end--;
+    *(end + 1) = '\0';
+    return str;
+}
+
+char** split_string(char* str) {
+    char** splits = NULL;
+    int count = 0;
+    char* token = strtok(str, " ");
+    while (token) {
+        splits = realloc(splits, sizeof(char*) * ++count);
+        splits[count - 1] = token;
+        token = strtok(NULL, " ");
+    }
+    return splits;
+}
+
+int parse_int(char* str) {
+    char* endptr;
+    int val = strtol(str, &endptr, 10);
+    if (endptr == str || *endptr != '\0') exit(EXIT_FAILURE);
+    return val;
+}
